@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Co-Viewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Co-Viewer</h1>
+        <div id="role-selection">
+            <button onclick="selectRole('admin')">Join as Admin</button>
+            <button onclick="selectRole('viewer')">Join as Viewer</button>
+        </div>
+        
+        <div id="pdf-controls" style="display:none;">
+            <button id="prev" onclick="prevPage()">Previous</button>
+            <button id="next" onclick="nextPage()">Next</button>
+            <p>Page: <span id="page-num"></span> / <span id="page-count"></span></p>
+        </div>
+
+        <div id="pdf-viewer"></div>
+    </div>
+
+    <script src="pdfjs/pdf.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
