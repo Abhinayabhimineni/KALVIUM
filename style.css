@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+#pdf-viewer {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ccc;
+    height: 600px;
+    overflow: auto;
+}
+
+button {
+    margin: 5px;
+}
